@@ -54,8 +54,8 @@ if not no_headers
 	)
 
 	install_headers(
-		'include/lyre/memstat.h',
-		'include/lyre/syscall.h',
+		'include/voyageros64/memstat.h',
+		'include/voyageros64/syscall.h',
 		subdir: 'voyageros64',
 	)
 endif
