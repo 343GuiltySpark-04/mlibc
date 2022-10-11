@@ -141,6 +141,10 @@ elif host_machine.system() == 'dripos'
 	rtdl_include_dirs += include_directories('sysdeps/dripos/include')
 	libc_include_dirs += include_directories('sysdeps/dripos/include')
 	subdir('sysdeps/dripos')
+elif host_machine.system() == 'voyageros64'
+	rtdl_include_dirs += include_directories('sysdeps/voyageros64/include')
+        libc_include_dirs += include_directories('sysdeps/voyageros64/include')
+        subdir('sysdeps/voyageros64')
 else
 	error('No sysdeps defined for OS: ' + host_machine.system())
 endif
